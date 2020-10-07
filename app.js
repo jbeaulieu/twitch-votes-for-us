@@ -7,7 +7,8 @@ const client = new tmi.Client({
 	options: { debug: true },
 	connection: {
 		reconnect: true,
-		secure: true
+		secure: true,
+		port: process.env.PORT
 	},
 	identity: {
 		username: process.env.TWITCH_USERNAME,
